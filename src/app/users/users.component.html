@@ -1,0 +1,64 @@
+<div>
+
+<app-nav-bar></app-nav-bar>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="list-group">
+                    <a  routerLink="/dashboard" class="list-group-item"><i class="glyphicon glyphicon-dashboard"></i> Dashboard</a>
+                    <a routerLink="/pages" class="list-group-item "><i class="glyphicon glyphicon-file"></i> Pages</a>
+                    <a routerLink="/categories" class="list-group-item"><i class="glyphicon glyphicon-folder-open"></i> Categories</a>
+                    <a routerLink="/users" class="list-group-item active"><i class="glyphicon glyphicon-user"></i> User Accounts</a>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1 class="page-header"><i class="glyphicon glyphicon-user"></i> Users</h1>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="btn-group actions" role="group" aria-label="...">
+                            <a  (click)="openSignUp()" href="javascript:void(0)" type="button"  class="btn btn-default"><i class="glyphicon glyphicon-plus"></i> New</a>
+                            <a (click)="openEdit();"  href="javascript:void(0)" type="button" class="btn btn-default"><i class="glyphicon glyphicon-pencil"></i> Edit</a>
+                            <a href="javascript:void(0)" (click)="delete()" type="button" class="btn btn-default"><i class="glyphicon glyphicon-remove"></i> Delete</a>
+                        </div>
+                    </div>
+                </div>
+                
+                 <ol class="breadcrumb">
+                    <li><a routerLink="/dashboard">Dashboard</a></li>
+                    <li class="active">Users</li>
+                </ol>
+                
+                <table id="sort-table" class="table table-striped tablesorter">
+                  <thead>
+                   <tr >
+                      <th><input type="checkbox"></th>
+                       <th>Full Name <i class="glyphicon glyphicon-chevron-down"></i></th>
+                       <th>Email <i class="glyphicon glyphicon-chevron-down"></i></th>
+                       <th>Group <i class="glyphicon glyphicon-chevron-down"></i></th>
+                   </tr>
+                   </thead>
+                   
+                   <tbody>
+                   <tr *ngFor="let user of users">
+                      <td><input type="checkbox" (change)="addDeleteId(user._id)" ></td>
+                       <td><a href="user">{{user.name}}</a></td>
+                       <td>{{user.email}}</td>
+                       <td>{{user.group}}</td>   
+                   </tr>
+                   
+                   </tbody>
+                </table>
+               
+               
+                
+            </div>
+        </div>
+    </div>
+</section>
+<app-footer></app-footer>
+</div>
+

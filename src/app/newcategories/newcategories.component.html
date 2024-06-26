@@ -1,0 +1,35 @@
+<button type="reset" class="btn btn-default pull-right" (click)="onClose()">x</button>
+<br>
+<br>
+
+
+<mat-card>Add Category Title
+    <br>
+    <form [formGroup]="categories" class="example-form">
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Enter Category Title</mat-label>
+            <input matInput placeholder="Enter Category Title" formControlName="categoryname">
+        </mat-form-field>
+
+
+        
+                    <button mat-raised-button color="primary" type="submit" (click) ="onSubmit()">Submit</button>
+            
+                
+    </form>
+
+
+</mat-card>
+
+
+
+
+<!-- 
+<div *ngFor="let name of listOfCategories">
+    {{name?.categoryname}}
+
+</div>
+<div *ngFor="let name of shared.listOfCategories">
+    {{name?.categoryname}}
+
+</div>  -->

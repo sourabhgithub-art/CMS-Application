@@ -1,0 +1,10 @@
+#login {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #1f87c2;
+    color: white;
+    height: 100vh;
+}
+#login h2{
+    color: white;
+}

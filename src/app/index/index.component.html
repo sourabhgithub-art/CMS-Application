@@ -1,0 +1,105 @@
+<app-nav-bar></app-nav-bar>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="list-group">
+          <a routerLink="/dashboard" class="list-group-item active"><i class="glyphicon glyphicon-dashboard"></i>
+            Dashboard</a>
+          <a routerLink="/pages" class="list-group-item"><i class="glyphicon glyphicon-file"></i> Pages</a>
+          <a routerLink="/categories" class="list-group-item"><i class="glyphicon glyphicon-folder-open"></i>
+            Categories</a>
+          <a routerLink="/users" class="list-group-item"><i class="glyphicon glyphicon-user"></i> User Accounts</a>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <h1 class="page-header">
+          <i class="glyphicon glyphicon-dashboard"></i> Dashboard
+        </h1>
+        <h3>Latest Pages</h3>
+        <table class="table table-striped">
+          <tr>
+            <th>Page Title</th>
+            <th>Category</th>
+            <th>Author</th>
+          </tr>
+
+          <tr>
+            <td><a href="javascript:void(0)" routerLink="/introduction">Introduction</a></td>
+            <td>Category One</td>
+            <td>John Wick</td>
+          </tr>
+
+          <tr>
+            <td><a href="javascript:void(0)" routerLink="/cms-app">CMS-App</a></td>
+            <td>Category Two</td>
+            <td>Vicky Nash</td>
+          </tr>
+
+          <tr>
+            <td><a href="javascript:void(0)" routerLink="/features">Features</a></td>
+            <td>Category One</td>
+            <td>Jenni lora</td>
+          </tr>
+
+          <tr>
+            <td><a href="javascript:void(0)" routerLink="/install">Installation</a></td>
+            <td>Category Three</td>
+            <td>Haley maya</td>
+          </tr>
+
+          <tr>
+            <td><a href="javascript:void(0)" routerLink="/advantages">Advantages</a></td>
+            <td>Category Two</td>
+            <td>Austen Paige</td>
+          </tr>
+        </table>
+        <a class="btn btn-default" href="javascript:void(0)" routerLink="/pages">View All Pages</a>
+        <hr />
+
+        <h3>Latest Users</h3>
+        <table class="table table-striped">
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Group</th>
+          </tr>
+
+          <tr>
+            <td><a href="user.html">Austen Paige</a></td>
+            <td>paige@info.com</td>
+            <td>Admin</td>
+          </tr>
+
+          <tr>
+            <td><a href="user.html">Vicky Nash</a></td>
+            <td>vicky@info.com</td>
+            <td>Admin</td>
+          </tr>
+
+          <tr>
+            <td><a href="user.html">John Wick</a></td>
+            <td>wick@info.com</td>
+            <td>Registered</td>
+          </tr>
+
+          <tr>
+            <td><a href="user.html">Haley maya</a></td>
+            <td>maya@info.com</td>
+            <td>Admin</td>
+          </tr>
+
+          <tr>
+            <td><a href="user.html">Jenni lora</a></td>
+            <td>jenni@info.com</td>
+            <td>Registered</td>
+          </tr>
+        </table>
+        <a class="btn btn-default" routerLink="/users">View All Users</a>
+        <hr/>
+    </div>
+  </div>
+  </div>
+</section>
+<app-footer></app-footer>

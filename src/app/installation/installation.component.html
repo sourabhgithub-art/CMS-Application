@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features Of CMS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        h4{
+            background-color: greenyellow;
+            text-align: center;
+            text-size-adjust: 30px;
+        }
+        footer{
+            background-color: black;
+            color: aliceblue;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>3.How to install CMS-App?</h1>
+</header>
+<img src="../../assets/img/install.png" alt="img">
+<h4>
+    Usually, CMS is installed by using the Installation Wizard. It can also be installed using a console installation or an unattended (or silent) installation as detailed in the following note.
+
+    For more information about any of the installation methods, see the Operations Center Server Installation Guide.
+    
+    Installing CMS Using a GUI Wizard
+    
+    Installing CMS Using a Console
+    
+    Installing CMS Using an Unattended Mode
+    
+    Installing CMS Using a GUI Wizard#
+    To install CMS:
+    
+    (Recommended) Stop all programs before continuing especially those any programs that might interfere with the Operations Center installation.
+    
+    If installing on Windows 2012 and using a DVD/CD, mounted ISO or mounted network install, do the following:
+    
+    Locate the installation .exe file:
+    
+    Copy
+    mount_location\CMS\Disk1\InstData\Windows\VM\install.exe
+    Right-click the file and select Properties.
+    
+    Open the Compatibility tab, mark the Run this program in compatibility mode for option and select Windows 7.
+    
+    Do one of the following:
+    
+    Windows: Do one of the following:
+    
+    Insert the CMS CD into the CD drive of the server on which the software is to be installed.
+    
+    The Installation Wizard should launch automatically. If not, enter install.bat at a command prompt to manually launch the Installation Wizard.
+    
+    Access the downloaded CMS files, then enter install.bat at a command prompt to manually launch the Installation Wizard.
+    
+    UNIX Do one of the following:
+    
+    Set the variable path to where the Java executable is, mount the CD, then run install.sh from the root.
+    
+    Set the variable path to where the Java executable is, change to the directory where the downloaded CMS files exist, then run install.sh from the root.
+    
+    On the License Agreement page, review the contents of the license agreement and select the I accept the terms of the License Agreement radio button if you agree with the terms.
+    
+    On the Choose Java Virtual Machine page, do the following:
+    
+    To install the Java VM, do one of the following:
+    
+    (Windows 32-bit) Select the Choose a Java VM already installed on this application radio button and select the desired Java VM from the list.
+    
+    Select Search For Others to list additional installed VMs.
+    
+    Select Choose Another to navigate to the location of the Java VM you want to use.
+    
+    IMPORTANT:If installing on a Windows 32-bit platform, select a 32-bit JVM. If installing on a Windows 64-bit platform, select a 64-bit JVM. CMS cannot run if the wrong JVM is selected.
+    
+    On the Choose Install Set page, do one of the following:
+    
+    Click Next to accept the default typical install set and install the most common application features.
+    
+    Click Web Application for the installer to save the .war files to your server.
+    
+    On the Choose Install Folder page, click Next to accept the default installation directory or click Choose to browse for a different location.
+    
+    On the CMS Server Configuration page, do the following:
+    
+    Specify the CMS communications mode by selecting one of the following CMS Communications Mode radio buttons:
+    
+    http only to only use unsecure communications.
+    
+    https only to only use secure communications.
+    
+    both to allow both unsecure and secure communications.  
+</h4>
+<footer>
+    @Copyright All rights reserved,Vicky Nash
+</footer>
+</body>
+</html>

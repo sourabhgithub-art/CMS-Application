@@ -1,0 +1,24 @@
+
+<div id="login">
+  <form class="form-signin" [formGroup]="loginFormGroup" (ngSubmit)="loginUser()">
+    <h2 class="form-signin-heading text-center">DCX CMS</h2>
+
+    <label for="inputEmail" class="sr-only">Email address</label>
+    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus
+      formControlName="email" />
+    <span *ngIf="email && email.invalid && email.touched" style="color: red;">**Email is invalid</span>
+
+    <label for="inputPassword" class="sr-only" formControlName="password">Password</label>
+    <input type="password" class="form-control" placeholder="Password" required formControlName="password" />
+    <span *ngIf="password && password.invalid && password.touched" style="color: red;">**Password is required</span>
+    <div class="checkbox">
+      <label>
+        <input type="checkbox" value="remember-me" /> Remember me
+      </label>
+    </div>
+    <button [disabled]="loginFormGroup.invalid" class="btn btn-lg btn-primary btn-block" type="submit">
+      Sign in
+    </button>
+  </form>
+
+  

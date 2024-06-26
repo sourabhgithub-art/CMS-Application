@@ -1,0 +1,25 @@
+<mat-dialog-content class="mat-typography">
+<div class="signup-form">
+	<!-- <div class="text-danger-error" Swal.fire({position='center',icon='success',showConfirmButton= true,
+	timer="1500"})>{{output}}</div> -->
+    <form #usersignup = "ngForm" (ngSubmit)="onClickSubmit(usersignup.value);resetUserForm(usersignup)">
+		<h2> NEW PAGES` </h2>
+		<p class="hint-text">Create your new account.</p>
+        <div class="form-group">
+			<div class="row">
+				<div class="col-xs-6"><input type="text" class="form-control" id="pageTitle" name="pageTitle" placeholder="Page title" required="required" ngModel></div>
+			</div>        	
+        </div>
+        <div class="form-group">
+        	<input type="category" class="form-control" name="category" id="category" placeholder="Category" required="required" ngModel>
+        </div>
+		<div class="form-group">
+            <input type="author" class="form-control" name="author" id="author" placeholder="Author" required="required" ngModel>
+        </div>
+		<div class="form-group">
+            <button type="submit"  mat-dialog-close class="btn btn-success btn-lg btn-block"> Submit </button>
+        </div>
+    </form>
+	
+</div>
+</mat-dialog-content>

@@ -1,0 +1,33 @@
+
+<mat-dialog-content class="mat-typography">
+<div class="signup-form">
+    <form #usersignup="ngForm" (ngSubmit)="onClickSubmit(usersignup.value);resetUserForm(usersignup)">
+		<h2 mat-dialog-title> NEW USER </h2>
+		<p class="hint-text">Create your new account.</p>
+        <div class="form-group">
+			<div class="row">
+				<div class="col-xs-12"><input type="text" class="form-control" id="name" name="name" placeholder="Full Name" required="required" ngModel></div>
+				
+			</div>        	
+        </div>
+        <div class="form-group">
+        	<input type="email" class="form-control" name="email" id="email" placeholder="Email" required="required" ngModel>
+        </div>
+		<div class="form-group">
+            <input type="password" class="form-control" name="password" id="password" placeholder="Password" required="required" ngModel>
+        </div>
+
+        <div class="form-group">
+            <input type="text" class="form-control" name="group" id="group" placeholder="Group" required="required" ngModel>
+		</div>
+		      
+        <div class="form-group">
+			<label class="checkbox-inline"><input type="checkbox" id="termsOfCondition" name="termsOfCondition" required="required" ngModel> I accept the <a href="https://www.brightest.org/en/privacy-policy/?gclid=EAIaIQobChMIjuv81u3x9gIVSxwrCh1CjgnyEAAYAyAAEgJLCvD_BwE">Terms of Use</a> &amp; <a href="https://www.brightest.org/en/privacy-policy/?gclid=EAIaIQobChMIjuv81u3x9gIVSxwrCh1CjgnyEAAYAyAAEgJLCvD_BwE">Privacy Policy</a></label>
+		</div>
+		<div class="form-group">
+            <button type="submit" mat-dialog-close class="btn btn-success btn-lg btn-block"> Submit </button>
+        </div>
+    </form>
+	
+</div>
+</mat-dialog-content>
