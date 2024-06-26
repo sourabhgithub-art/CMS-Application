@@ -1,0 +1,29 @@
+
+{
+ "users":[
+    {
+        "id":1,
+        "name":"Austen Paige",
+        "email":"paige@info.com",
+        "group":"Admin"
+    },
+    {
+        "id":2,
+        "name":"Jenni Iora",
+        "email":"jenni@info.com",
+        "group":"Registered"
+    },
+    {
+        "id":3,
+        "name":"John Wick",
+        "email":"wick@info.com",
+        "group":"Registered"
+    },
+    {
+        "id":4,
+        "name":"Vicky Nash",
+        "email":"vicky@info.com",
+        "group":"Admin"
+    }
+ ]
+}
